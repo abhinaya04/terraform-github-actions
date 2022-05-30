@@ -17,7 +17,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform-bucket" {
-  name = "terraform-github-actions-1925"
+  bucket = "terraform-github-actions-1925"
 }
 /* Commented out until after bootstrap
 
