@@ -16,7 +16,9 @@ provider "aws" {
   version = "~> 2.36.0"
 }
 
-
+resource "aws_s3_bucket" "terraform-bucket" {
+  name = "terraform-github-actions-1925"
+}
 /* Commented out until after bootstrap
 
 # Call the seed_module to build our ADO seed info
